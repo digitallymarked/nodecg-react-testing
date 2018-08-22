@@ -2,11 +2,9 @@
   "name": "react-testing",
   "version": "0.0.0",
   "description": "Testing out how to get a bundle working with React",
-  "homepage": "",
   "author": {
     "name": "Mark Markov",
-    "email": "digitallymarked@gmail.com",
-    "url": ""
+    "email": "digitallymarked@gmail.com"
   },
   "files": [
     "dashboard",
@@ -26,7 +24,7 @@
         "name": "panel",
         "title": "Panel",
         "width": 2,
-        "file": "panel.html",
+        "file": "dist/panel.html",
         "headerColor": "#525F78"
       }
     ],
@@ -39,5 +37,9 @@
     ]
   },
   "repository": "https://github.com/nodecg/nodecg.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
 }
