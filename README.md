@@ -3,3 +3,7 @@ It works with NodeCG versions which satisfy this [semver](https://docs.npmjs.com
 You will need to have an appropriate version of NodeCG installed to use it.
 
 dashboard script `parcel watch panel.html --no-cache --public-url ./`
+
+## Reference
+
+- https://github.com/RTAinJapan/rtainjapan-layouts/blob/master/scripts/bundle.js
