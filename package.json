@@ -1,17 +1,11 @@
 {
-  "name": "react-testing",
+  "name": "nodecg-react-testing",
   "version": "0.0.0",
   "description": "Testing out how to get a bundle working with React",
   "author": {
     "name": "Mark Markov",
     "email": "digitallymarked@gmail.com"
   },
-  "files": [
-    "dashboard",
-    "graphics",
-    "extension.js",
-    "extension"
-  ],
   "keywords": [
     "nodecg",
     "react",
@@ -24,13 +18,13 @@
         "name": "panel",
         "title": "Panel",
         "width": 2,
-        "file": "dist/panel.html",
+        "file": "panel.html",
         "headerColor": "#525F78"
       }
     ],
     "graphics": [
       {
-        "file": "index.html",
+        "file": "overlay.html",
         "width": 1920,
         "height": 1080
       }
@@ -41,5 +35,18 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "browsers": "last 1 chrome versions"
+  },
+  "scripts": {
+    "bundle": "node scripts/bundle.js",
+    "build": "NODE_ENV=production yarn bundle"
   }
 }
