@@ -1,5 +1,8 @@
-node_modules
-coverage
-bower_components
-dist
-.cache
+/node_modules
+/bower_components
+/.vscode
+/.cache
+
+/extension
+/dashboard
+/graphics

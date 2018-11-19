@@ -37,6 +37,7 @@
     "react-dom": "^16.4.2"
   },
   "devDependencies": {
+    "del-cli": "^1.1.0",
     "node-sass": "^4.10.0",
     "parcel-bundler": "^1.10.3",
     "sass": "^1.15.1"
@@ -47,6 +48,6 @@
   },
   "scripts": {
     "bundle": "node scripts/bundle.js",
-    "build": "NODE_ENV=production yarn bundle"
+    "build": "del dashboard extension graphics && NODE_ENV=dev yarn bundle"
   }
 }
