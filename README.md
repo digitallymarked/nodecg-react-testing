@@ -3,12 +3,12 @@
 This is a [NodeCG](http://github.com/nodecg/nodecg) bundle with basic functionality for using React.
 Once you get NodeCG version `^1.0.0` up and running, you are good to go.
 
-## Install and Usage
+## Install and Use
 
 1. `yarn install`
 2. `yarn build`
 
-Once you are happy with how you have your overlay looking, run `yarn bundle` and it will minify and bundle everything
+Once you are happy with how your overlay is looking, `yarn bundle` will minify and make everything production ready
 
 ## Credits
 
