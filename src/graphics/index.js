@@ -4,10 +4,10 @@ import ReactDOM from "react-dom";
 const streamTopic = nodecg.Replicant("streamTopic");
 
 class Welcome extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      topic: ""
+      topic: "Not Set"
     };
   }
 
