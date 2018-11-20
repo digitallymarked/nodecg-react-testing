@@ -30,7 +30,7 @@
       }
     ]
   },
-  "repository": "https://github.com/nodecg/nodecg.git",
+  "repository": "https://github.com/digitallymarked/nodecg-react-testing.git",
   "license": "MIT",
   "dependencies": {
     "react": "^16.4.2",

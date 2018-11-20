@@ -8,7 +8,7 @@ export default class Topic extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentTopic: null
+      currentTopic: streamTopic.value
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -27,11 +27,6 @@ export default class Topic extends Component {
   }
 
   componentDidMount() {
-    //Load initial value and set it's propper state
-    nodecg.readReplicant("streamTopic", value => {
-      this.setState({ currentTopic: value });
-    });
-
     //Listen for changes and update when the Replicant value changes
     streamTopic.on("change", newValue => {
       this.setState({ currentTopic: newValue });

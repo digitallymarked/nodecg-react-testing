@@ -7,16 +7,11 @@ class Overlay extends Component {
   constructor() {
     super();
     this.state = {
-      topic: "Just starting!"
+      topic: streamTopic.value
     };
   }
 
   componentDidMount() {
-    //Load initial value and set it's propper state
-    nodecg.readReplicant("streamTopic", value => {
-      this.setState({ topic: value });
-    });
-
     //Listen for changes and update when the Replicant value changes
     streamTopic.on("change", newValue => {
       this.setState({ topic: newValue });
