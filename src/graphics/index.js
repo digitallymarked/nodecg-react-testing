@@ -1,12 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Panel from '../dashboard/components/Panel'
+const streamTopic = nodecg.Replicant("streamTopic");
 
-const Dashboard = () => (
-  <div>
-    <Panel />
-  </div>
-);
+class Welcome extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      topic: ""
+    };
+  }
 
-ReactDOM.render(<Dashboard />, document.getElementById("root"));
+  componentDidMount() {
+    //Load initial value and set it's propper state
+    nodecg.readReplicant("streamTopic", value => {
+      this.setState({ topic: value });
+    });
+
+    //Listen for changes and update when the Replicant value changes
+    streamTopic.on("change", newValue => {
+      this.setState({ topic: newValue });
+    });
+  }
+  render() {
+    return <h1>Hello, {this.state.topic}</h1>;
+  }
+}
+
+ReactDOM.render(<Welcome />, document.getElementById("root"));

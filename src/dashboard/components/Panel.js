@@ -1,10 +1,16 @@
 import React from "react";
 
+const streamTopic = nodecg.Replicant("streamTopic");
+
 import "./panel.scss";
+
+const updateReplicant = () => {
+  streamTopic.value = "Stewie";
+};
 
 const Panel = () => (
   <div id="panel">
-    <h1>Yeeees</h1>
+    <button onClick={updateReplicant}>Update Replicant</button>
   </div>
 );
 
