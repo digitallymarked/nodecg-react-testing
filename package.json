@@ -1,7 +1,7 @@
 {
   "name": "nodecg-react-testing",
-  "version": "0.0.0",
-  "description": "Testing out how to get a bundle working with React",
+  "version": "1.0.0",
+  "description": "Basic NodeCG bundle using React",
   "author": {
     "name": "Mark Markov",
     "email": "digitallymarked@gmail.com"
@@ -15,10 +15,10 @@
     "compatibleRange": "^1.0.0",
     "dashboardPanels": [
       {
-        "name": "panel",
-        "title": "Panel",
+        "name": "react-panel",
+        "title": "React Panel",
         "width": 2,
-        "file": "panel.html",
+        "file": "topic.html",
         "headerColor": "#525F78"
       }
     ],

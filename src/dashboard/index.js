@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Panel from "./components/Panel";
+import Topic from "./components/Topic";
 
-const Dashboard = () => (
+const Panel = () => (
   <div>
-    <Panel />
+    <Topic />
   </div>
 );
 
-ReactDOM.render(<Dashboard />, document.getElementById("root"));
+ReactDOM.render(<Panel />, document.getElementById("root"));

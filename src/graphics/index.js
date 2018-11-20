@@ -1,13 +1,13 @@
-import React from "react";
+import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
 const streamTopic = nodecg.Replicant("streamTopic");
 
-class Welcome extends React.Component {
+class Overlay extends Component {
   constructor() {
     super();
     this.state = {
-      topic: "Not Set"
+      topic: "Just starting!"
     };
   }
 
@@ -23,8 +23,8 @@ class Welcome extends React.Component {
     });
   }
   render() {
-    return <h1>Hello, {this.state.topic}</h1>;
+    return <h1>{this.state.topic}</h1>;
   }
 }
 
-ReactDOM.render(<Welcome />, document.getElementById("root"));
+ReactDOM.render(<Overlay />, document.getElementById("root"));
