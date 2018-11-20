@@ -47,7 +47,7 @@
     "browsers": "last 1 chrome versions"
   },
   "scripts": {
-    "bundle": "node scripts/bundle.js",
-    "build": "del dashboard extension graphics && NODE_ENV=dev yarn bundle"
+    "build": "node scripts/bundle.js",
+    "bundle": "del dashboard extension graphics && NODE_ENV=production yarn build"
   }
 }

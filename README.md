@@ -1,9 +1,20 @@
-react-testing is a [NodeCG](http://github.com/nodecg/nodecg) bundle.
-It works with NodeCG versions which satisfy this [semver](https://docs.npmjs.com/getting-started/semantic-versioning) range: `^1.0.0`
-You will need to have an appropriate version of NodeCG installed to use it.
+# NodeCG Basic React
 
-dashboard script `parcel watch panel.html --no-cache --public-url ./`
+This is a [NodeCG](http://github.com/nodecg/nodecg) bundle with basic functionality for using React.
+Once you get NodeCG version `^1.0.0` up and running, you are good to go.
 
-## Reference
+## Install and Usage
 
-- https://github.com/RTAinJapan/rtainjapan-layouts/blob/master/scripts/bundle.js
+1. `yarn install`
+2. `yarn build`
+
+Once you are happy with how you have your overlay looking, run `yarn bundle` and it will minify and bundle everything
+
+## Credits
+
+- [NodeCG](https://github.com/nodecg/nodecg): Main framework. Made by Lange and contributors.
+- [RTA in Japan Layouts](https://github.com/RTAinJapan/rtainjapan-layouts/blob/master/scripts/bundle.js) by [Hoishin](https://github.com/Hoishin) - inspiration and blatant copying of the `scripts` folder 🙇
+
+## License
+
+Source code is destributed with MIT License.
